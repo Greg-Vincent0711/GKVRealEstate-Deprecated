@@ -30,9 +30,9 @@ function NavBar() {
   );
 } /** Testing GitHub features*/
 
+function testFunction(){
+  return 1 + 2
+}
+
+
 export default NavBar;
-/**
- * <li>
-          <Link to="/AboutPage">About Us</Link>
-        </li>
- */
