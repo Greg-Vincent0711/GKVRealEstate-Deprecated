@@ -1,0 +1,82 @@
+/* .main-container .textBlock-One {
+  display: inline-block;
+  align-items: left;
+  justify-content: center;
+  text-align: left;
+  max-width: 80%;
+}
+
+.main-container .textBlock-Two {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 80%;
+} */
+
+.main-container {
+  padding: 0.4rem 3.4rem;
+  margin-left: 1.5rem;
+  padding: 2rem;
+  max-width: 90%;
+  font-size: 1.56rem;
+  line-height: 3.3rem;
+}
+
+.textBlock-One {
+  border-bottom: 1px solid #ccc;
+  margin-top: 2.4rem;
+  padding: 2rem;
+}
+
+.textBlock-One p {
+  padding-top: 1rem;
+}
+
+.textBlock-Two {
+  margin-top: 0.5rem;
+  padding: 2rem;
+}
+
+.textBlock-Two p {
+  padding-top: 1rem;
+}
+
+.animated-text-left {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+.animated-text-left {
+  animation-duration: 3s;
+  animation-name: slidein-left;
+}
+
+@keyframes slidein-left {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.animated-text-right {
+  animation-duration: 3s;
+  animation-name: slidein-right;
+}
+
+@keyframes slidein-right {
+  from {
+    margin-left: -100%;
+    max-width: 200%;
+  }
+
+  to {
+    margin-left: 0%;
+    max-width: 100%;
+  }
+}
