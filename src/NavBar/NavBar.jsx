@@ -1,6 +1,7 @@
 /**
  * @author Gregory Vincent
  * @date 5/20/22
+ * @modified 6/20/22 - GitHub practice
  * Navigation component for the homepage, if a user is not a tenant.
  */
 
@@ -27,7 +28,7 @@ function NavBar() {
       </ul>
     </nav>
   );
-} /** */
+} /** Testing GitHub features*/
 
 export default NavBar;
 /**
