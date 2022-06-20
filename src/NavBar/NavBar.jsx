@@ -28,11 +28,7 @@ function NavBar() {
       </ul>
     </nav>
   );
-} /** Testing GitHub features*/
-
-function testFunction(){
-  return 1 + 2
-}
+} 
 
 
 export default NavBar;
