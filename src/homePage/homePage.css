@@ -1,0 +1,84 @@
+.homepage-container {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.tagLine {
+  margin: 50px;
+  font-style: italic;
+  font-size: 70px;
+  max-width: 50%;
+  color: white;
+}
+
+.text-box {
+  height: 500px;
+  width: 500px;
+  /* background: url("./h_PageImages/Test_ImageThree.png"); */
+  position: absolute;
+  margin-left: 60%;
+  margin-top: -5%;
+}
+
+img {
+  position: absolute;
+  box-sizing: border-box;
+}
+
+/*Tagline Animation Beginning*/
+.fade-inTag {
+  animation: fadeIn linear 2s;
+  -webkit-animation: fadeIn linear 2s;
+  -moz-animation: fadeIn linear 2s;
+  -o-animation: fadeIn linear 2s;
+  -ms-animation: fadeIn linear 2s;
+}
+/*Tagline Animation End*/
+
+/*functions refer to all fade in animations*/
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
