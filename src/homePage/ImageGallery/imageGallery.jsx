@@ -4,22 +4,23 @@
  * Image Gallery component for the homepage
  */
 
-import ImageOne from "./GalleryImages/TestImageOne.png";
-import ImageTwo from "./GalleryImages/TestImageTwo.png";
-import ImageThree from "./GalleryImages/TestImageThree.png";
+import ImageZero from "./GalleryImages/TestImageOne.png";
+import ImageOne from "./GalleryImages/TestImageTwo.png";
+import ImageTwo from "./GalleryImages/TestImageThree.png";
 import React, { useState } from "react";
 import "./imageGallery.css";
 
 // var state = {
 //   index: 0,
-//   pictureList: [ImageOne, ImageTwo, ImageThree],
+//   pictureList: [ImageZero, ImageOne, ImageTwo],
 // };
 
-/**ImageThree */
-
+/**
+ * TODO - automatic image scrolling
+ */
 const ImageGallery = () => {
-  const [index, setIndex] = useState(1);
-  const pictureList = [ImageOne, ImageTwo, ImageThree];
+  const [index, setIndex] = useState(2);
+  const pictureList = [ImageZero, ImageOne, ImageTwo];
 
   function updateIndex(mathSymbol) {
     switch (mathSymbol) {
@@ -30,10 +31,10 @@ const ImageGallery = () => {
         setIndex(index + 1);
         break;
       case "toZero":
-        setIndex(index - index);
+        setIndex(0);
         break;
       case "EOA":
-        setIndex(0 + pictureList.length - 1);
+        setIndex(pictureList.length - 1);
         break;
       default:
         return 0;
@@ -53,22 +54,17 @@ const ImageGallery = () => {
   /**logic for handling the previous image*/
   const clickPrev = () => {
     if (index - 1 === -1) {
-      setIndex(updateIndex("toZero"));
+      setIndex(updateIndex("EOA"));
     } else {
       setIndex(updateIndex("decrement"));
     }
   };
 
   return (
-    <div className="main-container">
+    <div className="img-main-container">
       <img src={pictureList[index]} alt="test" />
-      <div className="btn-container">
-        <button className="next " onClick={clickPrev}>
-          P
-        </button>
-        <button classname="prev " onClick={clickNext}>
-          N
-        </button>
+      <div className="btnGroup">
+        <button className="next " onClick={clickNext}></button>
       </div>
     </div>
   );
@@ -76,3 +72,8 @@ const ImageGallery = () => {
 
 export default ImageGallery;
 
+/**
+ *<button classname="prev " onClick={clickNext}>
+          N
+        </button>
+ */
