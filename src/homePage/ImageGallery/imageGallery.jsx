@@ -4,22 +4,17 @@
  * Image Gallery component for the homepage
  */
 
-import ImageZero from "./GalleryImages/TestImageOne.png";
-import ImageOne from "./GalleryImages/TestImageTwo.png";
-import ImageTwo from "./GalleryImages/TestImageThree.png";
+import ImageZero from "./Images/TestImageOne.png";
+import ImageOne from "./Images/TestImageTwo.png";
+import ImageTwo from "./Images/TestImageThree.png";
 import React, { useState } from "react";
 import "./imageGallery.css";
-
-// var state = {
-//   index: 0,
-//   pictureList: [ImageZero, ImageOne, ImageTwo],
-// };
 
 /**
  * TODO - automatic image scrolling
  */
 const ImageGallery = () => {
-  const [index, setIndex] = useState(2);
+  const [index, setIndex] = useState(1);
   const pictureList = [ImageZero, ImageOne, ImageTwo];
 
   function updateIndex(mathSymbol) {
@@ -63,15 +58,20 @@ const ImageGallery = () => {
   return (
     <div className="img-main-container">
       <img src={pictureList[index]} alt="test" />
-      <div className="btnGroup">
-        <button className="next " onClick={clickNext}></button>
-      </div>
+      <h1 className="tagLine fade-inTag">Welcome to our community.</h1>
+      <h3 className=" h3 fade-in">
+        Tenants, click the link below to see your information.
+      </h3>
+      <div className="btnGroup"></div>
     </div>
   );
 };
 
+/*functions refer to all fade in animations*/
+
 export default ImageGallery;
 
+// <button className="next " onClick={clickNext}></button>;
 /**
  *<button classname="prev " onClick={clickNext}>
           N

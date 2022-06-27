@@ -13,7 +13,6 @@ import ImageGallery from "./ImageGallery/imageGallery";
 function HomePage() {
   return (
     <div className="homepage-container">
-      <h2 className="tagLine fade-inTag">Welcome to our community.</h2>
       <ImageGallery />
       <HomePageBtn />
     </div>

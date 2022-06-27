@@ -23,9 +23,6 @@ function HomePageBtn() {
   return (
     <div className="btn-contaner">
       <form>
-        <h3 className=" h3 fade-in">
-          Tenants, click the link below to see your information.
-        </h3>
         <button
           type="submit"
           className="fade-in submitBtn"

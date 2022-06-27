@@ -37,7 +37,7 @@ function ContactPage() {
               </div>
               <div className="input-group Subject">
                 <label>Subject</label>
-                <input type="text" placeholder="What's up?"></input>
+                <input type="text" placeholder="How can we help?"></input>
               </div>
             </div>
 
