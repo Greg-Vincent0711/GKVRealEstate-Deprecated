@@ -97,15 +97,19 @@ img {
   }
 }
 
-.img-main-container button {
-  /* display: inline-block;
-  background-color: red;
-  color: white;
-  min-height: 25px;
-  min-width: 25px;
-  box-sizing: border-box;
-  border-radius: 3rem;
-  margin-left: 73%;
-  margin-top: 15%;
-  position: absolute; */
+/*Setting up media query for laptop screens*/
+/*1440 is the max width of a 2015 mac book air*/
+@media only screen and (max-width: 1440px){
+  .img-main-container .tagLine{
+    font-size: 5rem;
+  }
+
+  .img-main-container h3 {
+    font-size: 3.2rem;
+  }
+
+  .img{
+    height:92.5%;
+  }
 }
+  

@@ -43,3 +43,9 @@ body {
 .Navbar li:hover {
   background-color: #481f26;
 }
+
+@media only screen and (max-width: 1440px){
+  .Navbar{
+    border-bottom: 0px;
+  }
+}

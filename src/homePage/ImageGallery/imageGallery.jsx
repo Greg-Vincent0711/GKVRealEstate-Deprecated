@@ -14,7 +14,7 @@ import "./imageGallery.css";
  * TODO - automatic image scrolling
  */
 const ImageGallery = () => {
-  const [index, setIndex] = useState(1);
+  const [index, setIndex] = useState(0);
   const pictureList = [ImageZero, ImageOne, ImageTwo];
 
   function updateIndex(mathSymbol) {
