@@ -1,11 +1,12 @@
 /*TODO - smooth transitions when picture changes*/
+/*TODO - After image gallery works, move the tagLine and h3 
+        this is so they render before the image gallery.*/
 
 /*Controls positioning of all content*/
 .img-main-container {
   display: inline-block;
   justify-content: center;
   align-items: center;
-  /* padding: 1rem; */
 }
 
 .img-main-container .tagLine {
@@ -31,17 +32,23 @@
   transform: translate(-50%, -50%);
 }
 
-/*Positioning of just the image within the main-container*/
+/*Main image settings*/
 img {
-  /* margin-left: 55%; */
-  margin-top: -1%;
   width: 100%;
-  height: 92.5%;
-  /* left: 10px; */
-  /* padding: 0rem 2rem; */
+  height: 92vh;
   position: absolute;
   box-sizing: border-box;
-  /* border-radius: 4rem; */
+}
+
+/*sets what is relevant to the view from img*/
+.current {
+  margin-top: -1%;
+  width: 100%;
+  height: 92vh;
+  position: absolute;
+  box-sizing: border-box;
+  opacity: 1;
+  transition: all 0.5s ease;
 }
 
 .fade-in {
@@ -99,8 +106,8 @@ img {
 
 /*Setting up media query for laptop screens*/
 /*1440 is the max width of a 2015 mac book air*/
-@media only screen and (max-width: 1440px){
-  .img-main-container .tagLine{
+@media only screen and (max-width: 1440px) {
+  .img-main-container .tagLine {
     font-size: 5rem;
   }
 
@@ -108,8 +115,7 @@ img {
     font-size: 3.2rem;
   }
 
-  .img{
-    height:92.5%;
+  .img {
+    height: 92.5%;
   }
 }
-  
