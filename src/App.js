@@ -3,7 +3,7 @@
  * @date 5/17/22
  * Main file Index.js renders
  */
-
+import React from 'react'
 import HomePage from "./homePage/homePage";
 import NavBar from "./NavBar/NavBar";
 import { Route, Routes } from "react-router-dom";

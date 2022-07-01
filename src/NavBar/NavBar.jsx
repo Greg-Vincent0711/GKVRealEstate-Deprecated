@@ -4,7 +4,7 @@
  * @modified 6/20/22 - GitHub practice
  * Navigation component for the homepage, if a user is not a tenant.
  */
-
+import React from 'react';
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 // import Button from "react-bootstrap/Button";

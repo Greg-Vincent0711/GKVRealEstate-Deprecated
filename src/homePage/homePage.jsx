@@ -2,6 +2,7 @@
  * @author Gregory Vincent
  * home-page component
  */
+ import React from 'react';
 import "./homePage.css";
 import HomePageBtn from "./Home-PageBtn/Home-PageBtn";
 import ImageGallery from "./ImageGallery/imageGallery";
@@ -14,6 +15,10 @@ function HomePage() {
   return (
     <div className="homepage-container">
       <ImageGallery />
+      <h1 className="tagLine fade-inTag">Welcome to our community.</h1>
+      <h3 className=" h3 fade-in">
+        Tenants, click the link below to see your information.
+      </h3>
       <HomePageBtn />
     </div>
   );

@@ -1,6 +1,4 @@
 /*TODO - smooth transitions when picture changes*/
-/*TODO - After image gallery works, move the tagLine and h3 
-        this is so they render before the image gallery.*/
 
 /*Controls positioning of all content*/
 .img-main-container {
@@ -9,28 +7,6 @@
   align-items: center;
 }
 
-.img-main-container .tagLine {
-  margin: 50px;
-  font-style: italic;
-  font-size: 6.5rem;
-  max-width: 80%;
-  color: white;
-  position: absolute;
-  left: 12%;
-  top: 1rem;
-}
-
-.img-main-container h3 {
-  position: absolute;
-  margin-top: 20px;
-  margin-left: 3% !important;
-  font-size: 4.2rem;
-  max-width: 80%;
-  top: 35%;
-  left: 46%;
-  color: white;
-  transform: translate(-50%, -50%);
-}
 
 /*Main image settings*/
 img {
@@ -50,6 +26,61 @@ img {
   opacity: 1;
   transition: all 0.5s ease;
 }
+
+.picture-info{
+  color:white;
+  font-size:1.8rem;
+  font-style:italic;
+  position: absolute;
+  top: 70%;
+  left: 48.4%;
+  transform: translate(-50%, -50%);
+  /* animation: image-move 1s ease 3s;
+  animation-fill-mode: forwards; */
+  opacity: 0%;
+}
+
+.current .picture-info{
+  opacity:1;
+}
+
+.arrow{
+  top:80%;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: transparent;
+  color:#fff;
+  width:2.5rem;
+  height:2.5rem;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.arrow:hover{
+  background:#fff;
+  color:#777;
+}
+
+.next{
+  right:46%;
+}
+
+.prev{
+  left:43.5%;
+}
+
+/* @keyframes image-move {
+  0%{
+  visibility: hidden;
+  top:100%;
+  }
+
+  100%{
+    visibility: visible;
+    top:70%;
+    }
+} */
 
 .fade-in {
   animation: fadeIn linear 2s;

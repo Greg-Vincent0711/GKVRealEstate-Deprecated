@@ -3,6 +3,7 @@
  * @date 5/24/22
  * About Page for Real Estate website
  */
+import React from 'react';
 import "./aboutPage.css";
 
 function AboutPage() {
@@ -10,12 +11,11 @@ function AboutPage() {
     <div className="main-container">
       {/** Text block about the owners. Top left quadrant of the page */}
       <div className="textBlock-One animated-text-left">
-        <h1>About the owners of GKVRealEstate - Greg and Keisha Vincent</h1>
+        <h1>About the owners of GKVRealEstate</h1>
         <p>
-          GKVRealEstate is the collective effort of the aforementioned owners.
-          Both being highly educated and driven, they decided to embark on a
-          journey to ensure financial freedom for not only themselves as time
-          goes on, but their children and descendants far into the future.
+          GKVRealEstate is the collective effort of two highly educated people looking to build
+          longterm wealth for themselves, children and descendants far into the future 
+          through smart investments.
         </p>
       </div>
       {/**Text block about the website creator and Real Estate. Bottom right quadrant of the page */}

@@ -8,7 +8,7 @@
   color: white;
 }
 
-/*submitBtn links the user to DoorLoop*/
+/*submitBtn links the user to the website backend*/
 .submitBtn {
   min-height: 90px;
   width: 350px;
@@ -19,7 +19,7 @@
   border-radius: 2rem;
   position: absolute;
   top: 60%;
-  left: 50%;
+  left: 48%;
   transform: translate(-50%, -50%);
 }
 

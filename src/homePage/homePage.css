@@ -2,17 +2,39 @@
   display: block;
   align-items: center;
   justify-content: center;
-  text-align: left;
 }
 
-.text-box {
+/* .text-box {
   height: 500px;
   width: 500px;
-  /* background: url("./h_PageImages/Test_ImageThree.png"); */
   position: absolute;
   margin-left: 60%;
   margin-top: -5%;
+} */
+
+.homepage-container .tagLine {
+  margin: 50px;
+  font-style: italic;
+  font-size: 5.5rem;
+  max-width: 80%;
+  color: white;
+  position: absolute;
+  left: 8%;
+  top: 1.5rem;
 }
+
+.homepage-container h3 {
+  position: absolute;
+  margin-top: 20px;
+  margin-left:4% !important;
+  font-size: 3.2rem;
+  max-width: 80%;
+  top: 35%;
+  left: 47%;
+  color: white;
+  transform: translate(-50%, -50%);
+}
+
 
 img {
   position: absolute;

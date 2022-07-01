@@ -3,7 +3,7 @@
  * @date 5/18/22
  *Input form for the homepage
  */
-
+import React from 'react';
 import "./Home-PageBtn.css";
 
 /**
