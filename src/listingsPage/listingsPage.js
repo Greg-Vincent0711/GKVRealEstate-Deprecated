@@ -3,4 +3,5 @@
  * @date 6/28/22
  * Listings page for all possible tenant locations
  */
- import React from 'react';
+import "./listingsPage.css";
+import "./listings";

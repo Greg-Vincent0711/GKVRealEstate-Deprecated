@@ -16,7 +16,7 @@ body {
   align-items: stretch;
   gap: 2rem;
   padding: 0 1rem;
-  border-bottom: 0.5px solid #ccc;
+  /* border-bottom: 0.5px solid #ccc; */
 }
 
 .Navbar ul {
@@ -44,8 +44,8 @@ body {
   background-color: #481f26;
 }
 
-@media only screen and (max-width: 1440px){
-  .Navbar{
+@media only screen and (max-width: 1440px) {
+  .Navbar {
     border-bottom: 0px;
   }
 }
