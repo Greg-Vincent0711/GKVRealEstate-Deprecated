@@ -64,8 +64,8 @@ function ContactPage() {
               <td>518-217-8007</td>
             </tr>
             <tr>
-              <td>Address</td>
-              <td>PO BOX 12451, Albany NY, 12309</td>
+              <td>P.O BOX</td>
+              <td>12451, Albany NY, 12309</td>
             </tr>
           </table>
         </div>

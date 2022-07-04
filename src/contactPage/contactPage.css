@@ -165,3 +165,9 @@ tr td {
     opacity: 1;
   }
 }
+
+@media only screen and (max-width:1440px){
+  .contact-container{
+    margin-top: 3rem;
+  }
+}

@@ -9,7 +9,7 @@ import NavBar from "./NavBar/NavBar";
 import { Route, Routes } from "react-router-dom";
 import AboutPage from "./aboutPage/aboutPage";
 import ContactPage from "./contactPage/contactPage";
-
+import listingsPage from "./listingsPage/listingsPage"
 /**
  * @returns <ImageGallery />
  */
@@ -21,6 +21,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/contactPage" element={<ContactPage />} />
         <Route path="/aboutPage" element={<AboutPage />} />
+        <Route path="/listingsPage" element={<listingsPage />} />
       </Routes>
     </div>
   );

@@ -1,0 +1,16 @@
+/*CSS for each individual listing*/
+
+.listing-container{
+    width:500px;
+    height:500px;
+    padding: 1rem 1rem;
+    background-color: #fff;
+}
+
+.listing{
+    opacity: 0;
+}
+
+.current{
+    opacity: 1;
+}
