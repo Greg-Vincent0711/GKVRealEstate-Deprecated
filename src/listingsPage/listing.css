@@ -1,16 +1,28 @@
 /*CSS for each individual listing*/
-
-.listing-container{
-    width:500px;
-    height:500px;
-    padding: 1rem 1rem;
-    background-color: #fff;
+.listing-container {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
 }
 
-.listing{
-    opacity: 0;
+#image {
+  box-sizing: border-box;
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  opacity: 0;
 }
 
-.current{
-    opacity: 1;
+.current {
+  width: 500px;
+  height: 500px;
+  opacity: 0;
+}
+
+.listing-info h2 {
+  color: white;
+  text-align: center;
+  position: absolute;
 }

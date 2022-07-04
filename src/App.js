@@ -3,13 +3,13 @@
  * @date 5/17/22
  * Main file Index.js renders
  */
-import React from 'react'
+import React from "react";
 import HomePage from "./homePage/homePage";
 import NavBar from "./NavBar/NavBar";
 import { Route, Routes } from "react-router-dom";
 import AboutPage from "./aboutPage/aboutPage";
 import ContactPage from "./contactPage/contactPage";
-import listingsPage from "./listingsPage/listingsPage"
+import ListingsPage from "./listingsPage/ListingsPage";
 /**
  * @returns <ImageGallery />
  */
@@ -21,7 +21,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/contactPage" element={<ContactPage />} />
         <Route path="/aboutPage" element={<AboutPage />} />
-        <Route path="/listingsPage" element={<listingsPage />} />
+        <Route path="/listingsPage" element={<ListingsPage />} />
       </Routes>
     </div>
   );

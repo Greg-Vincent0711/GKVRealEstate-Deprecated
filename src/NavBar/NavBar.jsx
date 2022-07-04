@@ -4,7 +4,7 @@
  * @modified 6/20/22 - GitHub practice
  * Navigation component for the homepage, if a user is not a tenant.
  */
-import React from 'react';
+import React from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 // import Button from "react-bootstrap/Button";
@@ -20,7 +20,7 @@ function NavBar() {
           <Link to="/ContactPage">Contact Us</Link>
         </li>
         <li>
-          <Link to="/listingsPage">Listings</Link>
+          <Link to="/ListingsPage">Listings</Link>
         </li>
         <li>
           <Link to="/AboutPage">About Us</Link>
@@ -28,7 +28,6 @@ function NavBar() {
       </ul>
     </nav>
   );
-} 
-
+}
 
 export default NavBar;

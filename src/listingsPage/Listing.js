@@ -17,6 +17,7 @@ import ImageTwo from "./listingImages/ListingOne/ListingOneImageTwo.png";
 import ImageThree from "./listingImages/ListingOne/ListingOneImageThree.png";
 import ImageFour from "./listingImages/ListingOne/ListingOneImageFour.png";
 import ImageFive from "./listingImages/ListingOne/ListingOneImageFive.png";
+// import ImageSix from "./listingImages/ListingOne/ListingOneImageSix.png";
 import ImageSeven from "./listingImages/ListingOne/ListingOneImageSeven.png";
 import ImageEight from "./listingImages/ListingOne/ListingOneImageEight.png";
 import ImageNine from "./listingImages/ListingOne/ListingOneImageNine.png";
@@ -24,7 +25,6 @@ import ImageTen from "./listingImages/ListingOne/ListingOneImageTen.png";
 
 import { AiFillRightCircle, AiFillLeftCircle } from "react-icons/ai";
 import React, { useState, useEffect } from "react";
-import "./listing.css";
 
 const listingPictures = [
   {
@@ -65,17 +65,17 @@ const listingPictures = [
   },
 ];
 
-const listingInfo = [
+const ListingInfo = [
   {
     Building: "2520 Watt Street, Unit 4",
-    Cost: "$500 per month",
-    Message: "Contact us for more info!"
-  }
-]
+    Cost: "$500 Per Month",
+    Message: " Contact us for more information",
+  },
+];
 
 const Listing = () => {
   const [currentImg, setImg] = useState(0);
-  const listingLength = listingPictures.length - 1;
+  const listingLength = listingPictures.length;
 
   //set the initial listing on page load
   useEffect(() => {
@@ -98,30 +98,26 @@ const Listing = () => {
       <AiFillLeftCircle
         className="arrow left"
         onClick={NextImg}
-      />
+      ></AiFillLeftCircle>
       <AiFillRightCircle
         className="arrow right"
         onClick={PrevImg}
-      />
+      ></AiFillRightCircle>
       {listingPictures.map((listing, index) => {
         return (
           <div
             className={index === currentImg ? "listing current" : "listing"}
             key={index}
           >
-           {index === currentImg && (
-            <div>
-            <img src ={listing.image}/>
-            {/**Image above, here is the information about the listing */}
-            {/**Since each image is for the same listing, you only need one source of info.*/}
-            {/**Eventually, it should be dynamic to reflect what listing is being looked at */}
-            <ul>
-              <li>{listingInfo.Building}</li>
-              <li>{listingInfo.Cost}</li>
-              <li>{listingInfo.Message}</li>
-            </ul>
-            </div>
-           )}
+            {index === currentImg && (
+              <div>
+                <div className="listing-info">
+                  <h2>{ListingInfo.Building}</h2>
+                  <h2>{ListingInfo.Cost}</h2>
+                  <h2>{ListingInfo.Message}</h2>
+                </div>
+              </div>
+            )}
           </div>
         );
       })}
@@ -130,3 +126,7 @@ const Listing = () => {
 };
 
 export default Listing;
+
+/**l
+ *  <img src={listing.image} id="image" alt="alt" />
+ */
