@@ -1,0 +1,21 @@
+/*this container is for every individual list element*/
+.listingPage-container{
+    display:flex;
+    justify-content:space-between;
+    position: absolute;
+    /*determines if content can wrap to multiple lines, and direction */
+    /*flex-wrap and flex-direction are the same thing*/
+    flex-flow:row wrap;
+    width:1320px;
+    height:600px;
+}
+
+.listing{
+    height:600px;
+    width:300px;
+    position:relative;
+}
+
+
+
+

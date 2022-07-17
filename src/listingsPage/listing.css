@@ -1,28 +1,53 @@
 /*CSS for each individual listing*/
 .listing-container {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: 50%;
+  display: block;
+  /*alwyas top -> bottom, left -> right*/
+  margin:1.3rem 1.2rem;
 }
 
-#image {
+.listing-container img {
   box-sizing: border-box;
   position: absolute;
-  height: 500px;
-  width: 500px;
-  opacity: 0;
+  height: 288px;
+  width: 384px;
+  border-radius:2rem;
 }
 
-.current {
-  width: 500px;
-  height: 500px;
-  opacity: 0;
-}
-
-.listing-info h2 {
-  color: white;
-  text-align: center;
+.listing-info ul{
+  display:block;
+  color:white;
+  list-style: none;
+  margin-left:.5rem;
   position: absolute;
+  top:52%;
+  font-size: .74rem;
+  font-style: italic;
+}
+
+.listing-container .arrow{
+  border: 2px solid white;
+  border-radius: 50%;
+  background: transparent;
+  color:white;
+  width:1.5rem;
+  height:1.5rem;
+  position: absolute;
+  cursor: pointer;
+  top:46%;
+}
+
+#left{
+  transform: translate(-50%, -50%);
+  left:60%;
+  
+}
+
+#right{
+  transform: translate(-50%, -50%);
+  right:13%;
+}
+
+.listing-container .arrow:hover{
+  color:maroon;
+  background:white;
 }

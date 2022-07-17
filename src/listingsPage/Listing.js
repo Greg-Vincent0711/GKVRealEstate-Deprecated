@@ -3,7 +3,7 @@
  * Template for each individual listing on the listings page
  * @date 6/28/22
  * Each individual listing will be an offshoot of the
- * image gallery component used for the homescreen
+ * image gallery component used for the homescreen.
  */
 
 /** This listing component is a temporary one to show
@@ -25,57 +25,78 @@ import ImageTen from "./listingImages/ListingOne/ListingOneImageTen.png";
 
 import { AiFillRightCircle, AiFillLeftCircle } from "react-icons/ai";
 import React, { useState, useEffect } from "react";
+import "./listing.css"
 
-const listingPictures = [
+const ListingPictures = [
   {
     image: ImageOne,
     id: "Image#1",
+    Building: "2520 Watt Street, Unit 4",
+    Cost: "$500 Per Month",
+    Message: "Contact us for more information",
   },
   {
     image: ImageTwo,
     id: "Image#2",
+    Building: "2520 Watt Street, Unit 4",
+    Cost: "$500 Per Month",
+    Message: "Contact us for more information",
   },
   {
     image: ImageThree,
     id: "Image#3",
+    Building: "2520 Watt Street, Unit 4",
+    Cost: "$500 Per Month",
+    Message: "Contact us for more information",
   },
   {
     image: ImageFour,
     id: "Image#4",
+    Building: "2520 Watt Street, Unit 4",
+    Cost: "$500 Per Month",
+    Message: "Contact us for more information",
   },
   {
     image: ImageFive,
     id: "Image#5",
+    Building: "2520 Watt Street, Unit 4",
+    Cost: "$500 Per Month",
+    Message: "Contact us for more information",
   },
   {
     image: ImageSeven,
     id: "Image#7",
+    Building: "2520 Watt Street, Unit 4",
+    Cost: "$500 Per Month",
+    Message: "Contact us for more information",
   },
   {
     image: ImageEight,
     id: "Image#8",
+    Building: "2520 Watt Street, Unit 4",
+    Cost: "$500 Per Month",
+    Message: "Contact us for more information",
   },
   {
     image: ImageNine,
     id: "Image#9",
+    Building: "2520 Watt Street, Unit 4",
+    Cost: "$500 Per Month",
+    Message: "Contact us for more information",
   },
   {
     image: ImageTen,
     id: "Image#10",
+    Building: "2520 Watt Street, Unit 4",
+    Cost: "$500 Per Month",
+    Message: "Contact us for more information",
   },
 ];
 
-const ListingInfo = [
-  {
-    Building: "2520 Watt Street, Unit 4",
-    Cost: "$500 Per Month",
-    Message: " Contact us for more information",
-  },
-];
 
 const Listing = () => {
   const [currentImg, setImg] = useState(0);
-  const listingLength = listingPictures.length;
+  const listingLength = ListingPictures.length - 1;
 
   //set the initial listing on page load
   useEffect(() => {
@@ -95,27 +116,29 @@ const Listing = () => {
 
   return (
     <div className="listing-container">
-      <AiFillLeftCircle
-        className="arrow left"
-        onClick={NextImg}
-      ></AiFillLeftCircle>
-      <AiFillRightCircle
-        className="arrow right"
-        onClick={PrevImg}
-      ></AiFillRightCircle>
-      {listingPictures.map((listing, index) => {
+      {ListingPictures.map((listing, index) => {
         return (
           <div
-            className={index === currentImg ? "listing current" : "listing"}
+            className={index === currentImg ? "focused" : "unfocused"}
             key={index}
           >
             {index === currentImg && (
-              <div>
-                <div className="listing-info">
-                  <h2>{ListingInfo.Building}</h2>
-                  <h2>{ListingInfo.Cost}</h2>
-                  <h2>{ListingInfo.Message}</h2>
-                </div>
+              <div className="listing-info">
+              <AiFillLeftCircle
+                className="arrow"
+                id="left"
+                onClick={NextImg}
+              />
+              <AiFillRightCircle
+              className="arrow" id="right"
+              onClick={PrevImg}
+            />
+                <img src={listing.image} id="image" alt="alt" />
+                  <ul>
+                    <li><h2 id="liOne">{listing.Building}</h2></li>
+                    <li><h2 id="liTwo">{listing.Cost}</h2></li>
+                    <li><h2 id="liThree">{listing.Message}</h2></li>
+                  </ul>
               </div>
             )}
           </div>
@@ -128,5 +151,6 @@ const Listing = () => {
 export default Listing;
 
 /**l
- *  <img src={listing.image} id="image" alt="alt" />
+ *  
+ * TODO 
  */
