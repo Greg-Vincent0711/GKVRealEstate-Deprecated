@@ -3,7 +3,7 @@
  * @date 5/18/22
  *Input form for the homepage
  */
-import React from 'react';
+import React from "react";
 import "./Home-PageBtn.css";
 
 /**
@@ -21,7 +21,7 @@ function handleClick(event) {
  */
 function HomePageBtn() {
   return (
-    <div className="btn-contaner">
+    <div className="btn-contaner hvr-grow">
       <form>
         <button
           type="submit"

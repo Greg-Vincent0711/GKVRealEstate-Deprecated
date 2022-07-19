@@ -28,6 +28,11 @@ body {
   gap: 1rem;
 }
 
+.Navbar li {
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
 .Navbar a {
   color: inherit;
   text-decoration: none;

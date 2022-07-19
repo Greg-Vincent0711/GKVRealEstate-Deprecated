@@ -20,20 +20,20 @@ import React from "react";
 const ListingsPage = () => {
   return (
     <div className="listingPage-container">
-    <div className="listing" id="idOne">
-    <Listing/>
+      <div className="listing" id="idOne">
+        <Listing />
+      </div>
+      <div className="listing" id="idThree">
+        <Listing />
+      </div>
+      <div className="listing" id="idThree">
+        <Listing />
+      </div>
+      <div className="listing" id="idThree">
+        <Listing />
+      </div>
     </div>
-    <div className="listing" id="idThree">
-    <Listing/>
-    </div>
-    <div className="listing" id="idThree">
-    <Listing/>
-    </div>
-    {/* <div className="listing" id="idFour">
-    <Listing/>
-    </div> */}
-    </div>
-  )
+  );
 };
 
 export default ListingsPage;

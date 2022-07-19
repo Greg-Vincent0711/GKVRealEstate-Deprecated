@@ -27,14 +27,15 @@ p {
 }
 
 .contact-box {
-  background-color: white;
+  background-color: #553938;
   display: flex;
-  border-radius: 2rem;
 }
 
 .C-Left {
+  background-color: white;
   flex-basis: 60%;
   padding: 40px 60px;
+  border-radius: 2rem;
 }
 
 .C-Right {
@@ -83,7 +84,7 @@ label {
 }
 
 .contact-container button {
-  background-color: #474b4f;
+  background-color: #553938;
   color: white;
   width: 100px;
   border: none;
@@ -92,10 +93,11 @@ label {
   border-radius: 30px;
   margin-top: 10px;
   font-size: 15.5px;
+  transition: 0.4s;
 }
 
 .contact-container button:hover {
-  background-color: grey;
+  background-color: #481f26;
 }
 
 .C-Right h3 {
@@ -166,8 +168,8 @@ tr td {
   }
 }
 
-@media only screen and (max-width:1440px){
-  .contact-container{
+@media only screen and (max-width: 1440px) {
+  .contact-container {
     margin-top: 3rem;
   }
 }

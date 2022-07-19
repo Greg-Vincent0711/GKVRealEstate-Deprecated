@@ -9,7 +9,7 @@ import NavBar from "./NavBar/NavBar";
 import { Route, Routes } from "react-router-dom";
 import AboutPage from "./aboutPage/aboutPage";
 import ContactPage from "./contactPage/contactPage";
-import ListingsPage from "./listingsPage/ListingsPage";
+import ListingsPage from "./listingsPage/listingsPage";
 /**
  * @returns <ImageGallery />
  */

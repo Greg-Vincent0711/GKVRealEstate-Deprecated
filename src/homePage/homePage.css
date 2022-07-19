@@ -17,16 +17,16 @@
   font-style: italic;
   font-size: 5.5rem;
   max-width: 80%;
-  color: white;
+  color: black;
   position: absolute;
   left: 8%;
-  top: 1.5rem;
+  top: 2rem;
 }
 
 .homepage-container h3 {
   position: absolute;
   margin-top: 20px;
-  margin-left:4% !important;
+  margin-left: 4% !important;
   font-size: 3.2rem;
   max-width: 80%;
   top: 35%;
@@ -34,7 +34,6 @@
   color: white;
   transform: translate(-50%, -50%);
 }
-
 
 img {
   position: absolute;
