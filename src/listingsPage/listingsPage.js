@@ -8,18 +8,12 @@ import Listing from "./Listing";
 import React from "react";
 
 /**Page is a group of listings. */
-/**
- * TODO - finish the Listings Page Beta
- * Layout:
- * Stylized with flexbox
- * display: flex
- * justify-content(main axis): center or space-between
- * align-items; start to keep a consistent shape
- */
+
 /**Eventually, a dynamically rendered list. For right now, an example. */
 const ListingsPage = () => {
   return (
-    <div className="listingPage-container">
+    <div className="listingPage-container fade-in">
+      <h1>See what we have to offer below.</h1>
       <div className="listing" id="idOne">
         <Listing />
       </div>

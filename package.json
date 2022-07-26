@@ -55,7 +55,7 @@
   "bugs": {
     "url": "https://github.com/GregV-crypto/RealEstateRepo/issues"
   },
-  "homepage": "https://github.com/GregV-crypto/RealEstateRepo#readme",
+  "homepage": ".",
   "devDependencies": {
     "nodemon": "^2.0.19"
   }

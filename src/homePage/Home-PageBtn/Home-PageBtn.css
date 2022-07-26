@@ -13,15 +13,17 @@
   min-height: 90px;
   width: 350px;
   font-size: 40px;
+  font-family: Merriweather;
   background-color: #553938;
   color: white;
   box-sizing: border-box;
   border-radius: 2rem;
   position: absolute;
-  top: 60%;
-  left: 48%;
+  top: 40%;
+  left: 21.57%;
   transform: translate(-50%, -50%);
   transition: 0.4s;
+  z-index: 102;
 }
 
 .submitBtn:hover {

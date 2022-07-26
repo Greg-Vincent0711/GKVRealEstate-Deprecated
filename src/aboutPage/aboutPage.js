@@ -3,23 +3,23 @@
  * @date 5/24/22
  * About Page for Real Estate website
  */
-import React from 'react';
+import React from "react";
 import "./aboutPage.css";
 
 function AboutPage() {
   return (
     <div className="main-container">
       {/** Text block about the owners. Top left quadrant of the page */}
-      <div className="textBlock-One animated-text-left">
+      <div className="textBlock-One fade-in">
         <h1>About the owners of GKVRealEstate</h1>
         <p>
-          GKVRealEstate is the collective effort of two highly educated people looking to build
-          longterm wealth for themselves, children and descendants far into the future 
-          through smart investments.
+          GKVRealEstate is the collective effort of two highly educated people
+          looking to build longterm wealth for themselves, children and
+          descendants far into the future through smart investments.
         </p>
       </div>
       {/**Text block about the website creator and Real Estate. Bottom right quadrant of the page */}
-      <div className="textBlock-Two animated-text-right">
+      <div className="textBlock-Two fade-in">
         <h1>Real Estate Investing and our Values</h1>
         <p>
           {" "}
