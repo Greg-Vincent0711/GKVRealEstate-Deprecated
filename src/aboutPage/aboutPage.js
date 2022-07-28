@@ -35,18 +35,4 @@ function AboutPage() {
     </div>
   );
 }
-
-/**
- * <div className="text-container">
-        <p>
-          GKVRealEstate is the collective effort of Gregory and Keisha Vincent.
-          Both being highly educated and driven, they decided to embark on a
-          journey to ensure financial freedom for not only themselves as time
-          goes on, but their children as well. That leads to me, Gregory Vincent
-          Jr. As the designer of this website's appearance, I take great pride
-          in our family's collective success.
-        </p>
-      </div>
- */
-
 export default AboutPage;
