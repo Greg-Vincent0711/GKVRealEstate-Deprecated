@@ -11,9 +11,9 @@
   margin-left: 38px;
 }
 
-@media only screen and (max-width: 1420px) {
+@media only screen and (max-width: 1440px) {
   .listingPage-container {
-    grid-auto-flow: row;
+    gap: 4rem;
   }
 }
 
