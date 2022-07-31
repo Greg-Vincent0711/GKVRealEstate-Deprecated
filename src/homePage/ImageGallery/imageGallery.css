@@ -92,7 +92,6 @@ img {
   visibility: hidden;
   top:100%;
   }
-
   100%{
     visibility: visible;
     top:70%;
@@ -154,16 +153,13 @@ img {
 
 /*Setting up media query for laptop screens*/
 /*1440 is the max width of a 2015 mac book air*/
-@media only screen and (max-width: 1440px) {
-  .img-main-container .tagLine {
-    font-size: 5rem;
+@media only screen and (max-width: 1440px){
+  .white-text-block{
+    position: absolute;
+    height:96.5vh;
+    top:-1.2rem;
+    bottom:1.5rem;
   }
 
-  .img-main-container h3 {
-    font-size: 3.2rem;
-  }
-
-  .img {
-    height: 92.5%;
-  }
+  
 }

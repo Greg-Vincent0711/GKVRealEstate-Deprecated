@@ -49,6 +49,19 @@
   left: 18%;
 }
 
+@media only screen and (max-width:1440px){
+  #one{
+    top:9%;
+    left:24.3%;
+    font-size: 3.80rem;
+  }
+
+  #two{
+    top:19%;
+    left: 22.5%;
+  }
+}
+
 img {
   position: absolute;
   box-sizing: border-box;
