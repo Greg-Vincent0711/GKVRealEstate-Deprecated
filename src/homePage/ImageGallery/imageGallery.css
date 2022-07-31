@@ -7,11 +7,28 @@
   align-items: center;
 }
 
+.white-text-block {
+  width: 870px;
+  height: 93.46vh;
+  bottom: 1px;
+  position: absolute;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.68),
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0)
+  );
+  /* border: 1px solid black; */
+  border-radius: 0px 4.5rem 4.5rem 0px;
+  z-index: 99;
+}
 
 /*Main image settings*/
 img {
   width: 100%;
-  height: 92vh;
+  height: 93.5vh;
   position: absolute;
   box-sizing: border-box;
 }
@@ -20,54 +37,54 @@ img {
 .current {
   margin-top: -1%;
   width: 100%;
-  height: 92vh;
+  height: 92.1vh;
   position: absolute;
   box-sizing: border-box;
   opacity: 1;
-  transition: all 0.5s ease;
+  /* transition: all 0.01s ease; */
 }
 
-.picture-info{
-  color:white;
-  font-size:1.8rem;
-  font-style:italic;
+.picture-info {
+  color: white;
+  font-size: 2.8rem;
+  font-family: Merriweather;
+  font-style: italic;
   position: absolute;
-  top: 70%;
-  left: 48.4%;
+  top: 80%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  /* animation: image-move 1s ease 3s;
-  animation-fill-mode: forwards; */
   opacity: 0%;
+  z-index: 103;
 }
 
-.current .picture-info{
-  opacity:1;
+.current .picture-info {
+  opacity: 1;
 }
 
-.arrow{
-  top:80%;
+.arrow {
+  top: 70%;
   border: 2px solid #fff;
   border-radius: 50%;
-  background: transparent;
-  color:#fff;
-  width:2.5rem;
-  height:2.5rem;
+  background-color: #553938;
+  color: #fff;
+  width: 2.85rem;
+  height: 2.85rem;
   position: absolute;
   cursor: pointer;
-  z-index: 999;
+  z-index: 101;
+  transition: 0.4s;
 }
 
-.arrow:hover{
-  background:maroon;
-  color:white;
+.arrow:hover {
+  background: maroon;
 }
 
-.next{
-  right:46%;
+.next {
+  right: 44%;
 }
 
-.prev{
-  left:43.5%;
+.prev {
+  left: 45%;
 }
 
 /* @keyframes image-move {

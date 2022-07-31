@@ -3,7 +3,7 @@
  * @date 5/18/22
  *Input form for the homepage
  */
-import React from 'react';
+import React from "react";
 import "./Home-PageBtn.css";
 
 /**
@@ -13,7 +13,7 @@ import "./Home-PageBtn.css";
 function handleClick(event) {
   event.preventDefault();
   //placeholder link to doorloop.
-  window.open("https://www.doorloop.com/");
+  window.open("https://www.avail.co/companies/gkvrealestate/resident_login");
 }
 
 /**

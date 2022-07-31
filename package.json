@@ -7,6 +7,9 @@
     "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.1.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "hover.css": "^2.3.2",
     "react": "^18.1.0",
     "react-bootstrap": "^2.4.0",
     "react-dom": "^18.1.0",
@@ -19,7 +22,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "devStart": "nodemon -e js,ejs,css,html server.js"
   },
   "eslintConfig": {
     "extends": [
@@ -38,5 +42,21 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "description": "All GKVRealEstate Code to be used between PC and Laptop",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GregV-crypto/RealEstateRepo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GregV-crypto/RealEstateRepo/issues"
+  },
+  "homepage": ".",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
   }
 }
