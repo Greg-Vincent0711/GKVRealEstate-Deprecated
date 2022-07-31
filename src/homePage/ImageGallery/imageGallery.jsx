@@ -5,10 +5,12 @@
  */
 
 /**Picture Imports */
-import ImageZero from "./Images/TestImageZero.png";
-import ImageOne from "./Images/TestImageOne.png";
-import ImageTwo from "./Images/TestImageTwo.png";
-import ImageThree from "./Images/TestImageThree.png";
+import ImageOne from "./Images/ImageOne.jpg";
+import ImageTwo from "./Images/ImageTwo.jpg";
+import ImageThree from "./Images/ImageThree.jpg";
+import ImageFour from "./Images/ImageFour.jpg";
+import ImageFive from "./Images/ImageFive.jpg";
+import ImageSix from "./Images/ImageSix.jpg";
 
 /**React Imports */
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
@@ -18,26 +20,34 @@ import "./imageGallery.css";
 const pictureList = [
   //Each image is a js object for dynamic info
   {
-    //Each heading will correspond to a building address
-    //right now they're placeholders
-    image: ImageZero,
-    heading: "Image #1",
-    Address: "2520 Watt Street",
-  },
-  {
-    image: ImageOne,
+    image: ImageFour,
     heading: "Image #2",
-    Address: "2521 Watt Street",
+    Address: "2520 Watt Street",
   },
   {
     image: ImageTwo,
     heading: "Image #3",
-    Address: "2522 Watt Street",
+    Address: "110 Jackson Ave",
   },
   {
     image: ImageThree,
     heading: "Image #3",
-    Address: "2523 Watt Street",
+    Address: "101 Jackson Ave",
+  },
+  {
+    image: ImageOne,
+    heading: "Image #4",
+    Address: "2520 Watt Street",
+  },
+  {
+    image: ImageFive,
+    heading: "Image #5",
+    Address: "108 Jackson Avenue",
+  },
+  {
+    image: ImageSix,
+    heading: "Image #6",
+    Address: "2526 Watt Street",
   },
 ];
 
@@ -54,9 +64,9 @@ const ImageGallery = () => {
   let picInterval;
   let interval = 6000; //6 sec
 
-  function auto() {
-    picInterval = setInterval(NextImg, interval);
-  }
+  // function auto() {
+  //   picInterval = setInterval(NextImg, interval);
+  // }
 
   // useEffect(() => {
   //   if (scroll) {
@@ -80,6 +90,7 @@ const ImageGallery = () => {
     <div className="img-main-container">
       <AiOutlineArrowLeft className="arrow prev" onClick={PrevImg} />
       <AiOutlineArrowRight className="arrow next" onClick={NextImg} />
+      <div className="white-text-block"></div>
       {pictureList.map((picture, index) => {
         return (
           <div

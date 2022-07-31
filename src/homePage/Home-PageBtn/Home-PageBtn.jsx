@@ -13,7 +13,7 @@ import "./Home-PageBtn.css";
 function handleClick(event) {
   event.preventDefault();
   //placeholder link to doorloop.
-  window.open("https://www.doorloop.com/");
+  window.open("https://www.avail.co/companies/gkvrealestate/resident_login");
 }
 
 /**
@@ -21,7 +21,7 @@ function handleClick(event) {
  */
 function HomePageBtn() {
   return (
-    <div className="btn-contaner hvr-grow">
+    <div className="btn-contaner">
       <form>
         <button
           type="submit"
