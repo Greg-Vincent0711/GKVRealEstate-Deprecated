@@ -6,6 +6,7 @@ import React from "react";
 import "./homePage.css";
 import HomePageBtn from "./Home-PageBtn/Home-PageBtn";
 import ImageGallery from "./ImageGallery/imageGallery";
+
 /**
  * TODO - get images to show up, style them
  * TODO - change the website's color palette to match the images
@@ -26,8 +27,4 @@ function HomePage() {
   );
 }
 
-/**
-     <h1 className="tagLine fade-inTag">Welcome to our community.</h1>
- * <img src={TestImage} alt="test" className="fade-in" />
- */
 export default HomePage;

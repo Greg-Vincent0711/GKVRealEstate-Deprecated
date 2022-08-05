@@ -6,11 +6,12 @@
 
 /**Picture Imports */
 import ImageOne from "./Images/ImageOne.jpg";
-import ImageTwo from "./Images/ImageTwo.jpg";
-import ImageThree from "./Images/ImageThree.jpg";
+import ImageTwo from "./Images/ImageTwo.jpeg";
+import ImageThree from "./Images/ImageThree.jpeg";
 import ImageFour from "./Images/ImageFour.jpg";
 import ImageFive from "./Images/ImageFive.jpg";
 import ImageSix from "./Images/ImageSix.jpg";
+import ImageSeven from "./Images/ImageSeven.jpeg";
 
 /**React Imports */
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
@@ -47,7 +48,12 @@ const pictureList = [
   {
     image: ImageSix,
     heading: "Image #6",
-    Address: "2526 Watt Street",
+    Address: "2520 Watt Street",
+  },
+  {
+    image: ImageSeven,
+    heading: "Image #7",
+    Address: "2528 Watt Street",
   },
 ];
 
@@ -62,11 +68,11 @@ const ImageGallery = () => {
   //used for auto scroll feature
   const scroll = true;
   let picInterval;
-  let interval = 6000; //6 sec
+  let interval = 4000;
 
-  // function auto() {
-  //   picInterval = setInterval(NextImg, interval);
-  // }
+  function auto() {
+    picInterval = setInterval(NextImg, interval);
+  }
 
   // useEffect(() => {
   //   if (scroll) {
@@ -88,8 +94,8 @@ const ImageGallery = () => {
 
   return (
     <div className="img-main-container">
-      <AiOutlineArrowLeft className="arrow prev" onClick={PrevImg} />
-      <AiOutlineArrowRight className="arrow next" onClick={NextImg} />
+      <AiOutlineArrowLeft className="arrow" id="prev" onClick={PrevImg} />
+      <AiOutlineArrowRight className="arrow" id="next" onClick={NextImg} />
       <div className="white-text-block"></div>
       {pictureList.map((picture, index) => {
         return (

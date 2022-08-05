@@ -1,81 +1,39 @@
 .main-container {
-  padding: 0.4rem 3.4rem;
   margin-left: 1.5rem;
   padding: 2rem;
+  padding-top: 0;
   max-width: 90%;
   font-size: 1.56rem;
   line-height: 3.3rem;
+  position: absolute;
+  margin-top: 105vh;
+  top: -1%;
 }
 
-.main-container {
-  color: white;
-}
-.textBlock-One {
+#textBlock-One {
   border-bottom: 1px solid #ccc;
-  margin-top: 2.4rem;
+  padding: 2rem;
+  padding-top: 0;
+}
+#textBlock-Two {
+  margin-top: 0.3rem;
   padding: 2rem;
 }
 
-.textBlock-Two {
-  margin-top: 0.5rem;
-  padding: 2rem;
-}
-
-.textBlock-Two p {
+#textBlock-Two p {
   padding-top: 1rem;
 }
 
-.fade-in {
-  animation: fadeIn linear 2s;
-  -webkit-animation: fadeIn linear 2s;
-  -moz-animation: fadeIn linear 2s;
-  -o-animation: fadeIn linear 2s;
-  -ms-animation: fadeIn linear 2s;
+.invisible {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-ms-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.visible {
+  transform: translateY(0);
+  transition: 3s ease;
+  opacity: 1;
 }
 
 /*Setting up dimensions for macbook*/
@@ -87,13 +45,13 @@
   .main-container h1 {
     font-size: 2.2rem;
   }
-  .textBlock-One,
-  .textBlock-Two,
+  #textBlock-One,
+  #textBlock-Two,
   p {
     font-size: 1.4rem;
   }
 
-  .textBlock-One {
+  #textBlock-One {
     margin-top: 0rem;
   }
 }

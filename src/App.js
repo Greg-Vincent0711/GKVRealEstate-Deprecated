@@ -6,14 +6,17 @@
 import React from "react";
 import HomePage from "./homePage/homePage";
 import AboutPage from "./aboutPage/aboutPage";
+import "./App.css";
 /**
  * @returns <ImageGallery />
+ <AboutPage />
+  <AboutPage />
  */
 function App() {
   return (
     <div className="app-container">
-      <HomePage/>
-      <AboutPage/>
+      <HomePage />
+      <AboutPage />
     </div>
   );
 }

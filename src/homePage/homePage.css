@@ -4,14 +4,6 @@
   justify-content: center;
 }
 
-/* .text-box {
-  height: 500px;
-  width: 500px;
-  position: absolute;
-  margin-left: 60%;
-  margin-top: -5%;
-} */
-
 .homepage-container .tagLine {
   margin: 50px;
   font-style: italic;
@@ -49,15 +41,15 @@
   left: 18%;
 }
 
-@media only screen and (max-width:1440px){
-  #one{
-    top:9%;
-    left:24.3%;
-    font-size: 3.80rem;
+@media only screen and (max-width: 1440px) {
+  #one {
+    top: 9%;
+    left: 24.3%;
+    font-size: 3.8rem;
   }
 
-  #two{
-    top:19%;
+  #two {
+    top: 19%;
     left: 22.5%;
   }
 }
