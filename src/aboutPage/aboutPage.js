@@ -25,7 +25,7 @@ const AboutPage = () => {
   }, []);
   return (
     <div className="main-container">
-      {/** Text block about the owners. Top left quadrant of the page */}
+      {/** Text block about the owners.*/}
       <div id="textBlock-One">
         <h1 className={h1Visible ? "visible" : "invisible"} ref={h1Ref}>
           About the owners of GKVRealEstate
