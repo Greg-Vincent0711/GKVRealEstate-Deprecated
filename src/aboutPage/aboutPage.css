@@ -54,4 +54,8 @@
   #textBlock-One {
     margin-top: 0rem;
   }
+
+  .visible{
+    transition: 1.5s ease;
+  }
 }

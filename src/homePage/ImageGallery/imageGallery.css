@@ -92,9 +92,25 @@ img {
 @media only screen and (max-width: 1440px) {
   .white-text-block {
     position: absolute;
-    height: 96.5vh;
+    height: 103.1vh;
     top: -1.2rem;
     bottom: 1.5rem;
+    background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0)
+  );
+  }
+
+  .arrow{
+    top:65%;
+  }
+
+  .picture-info{
+    color:#FAF0E6;
   }
 }
 
