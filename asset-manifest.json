@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/GregV-crypto/RealEstateRepo/tree/Splash-Page/static/css/main.437feb0f.css",
+    "main.js": "/GregV-crypto/RealEstateRepo/tree/Splash-Page/static/js/main.f2d49b7e.js",
+    "static/media/ImageSix.jpg": "/GregV-crypto/RealEstateRepo/tree/Splash-Page/static/media/ImageSix.da400f911e375cc6536d.jpg",
+    "static/media/ImageFour.jpg": "/GregV-crypto/RealEstateRepo/tree/Splash-Page/static/media/ImageFour.316407efec085a37d696.jpg",
+    "static/media/ImageFive.jpg": "/GregV-crypto/RealEstateRepo/tree/Splash-Page/static/media/ImageFive.0e538f64d4cfd346f637.jpg",
+    "static/media/ImageThree.jpeg": "/GregV-crypto/RealEstateRepo/tree/Splash-Page/static/media/ImageThree.7969fa8463dd149d7d1d.jpeg",
+    "static/media/ImageSeven.jpeg": "/GregV-crypto/RealEstateRepo/tree/Splash-Page/static/media/ImageSeven.0d0a753d6e3f71f09cca.jpeg",
+    "static/media/ImageTwo.jpeg": "/GregV-crypto/RealEstateRepo/tree/Splash-Page/static/media/ImageTwo.a9d2d44553c7ec285f96.jpeg",
+    "static/media/ImageOne.jpg": "/GregV-crypto/RealEstateRepo/tree/Splash-Page/static/media/ImageOne.ec0258f1f3b362b7f734.jpg",
+    "index.html": "/GregV-crypto/RealEstateRepo/tree/Splash-Page/index.html",
+    "main.437feb0f.css.map": "/GregV-crypto/RealEstateRepo/tree/Splash-Page/static/css/main.437feb0f.css.map",
+    "main.f2d49b7e.js.map": "/GregV-crypto/RealEstateRepo/tree/Splash-Page/static/js/main.f2d49b7e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.437feb0f.css",
+    "static/js/main.f2d49b7e.js"
+  ]
+}
