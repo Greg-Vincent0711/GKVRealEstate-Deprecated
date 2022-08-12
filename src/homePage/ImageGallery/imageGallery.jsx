@@ -74,12 +74,12 @@ const ImageGallery = () => {
     picInterval = setInterval(NextImg, interval);
   }
 
-  // useEffect(() => {
-  //   if (scroll) {
-  //     auto();
-  //   }
-  //   return () => clearInterval(picInterval);
-  // }, [currentImage]);
+  useEffect(() => {
+    if (scroll) {
+      auto();
+    }
+    return () => clearInterval(picInterval);
+  }, [currentImage]);
 
   /**logic for handling the next image*/
   const NextImg = () => {
