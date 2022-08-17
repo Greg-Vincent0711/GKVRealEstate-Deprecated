@@ -68,7 +68,7 @@ const ImageGallery = () => {
   //used for auto scroll feature
   const scroll = true;
   let picInterval;
-  let interval = 4000;
+  let interval = 6000;
 
   function auto() {
     picInterval = setInterval(NextImg, interval);
