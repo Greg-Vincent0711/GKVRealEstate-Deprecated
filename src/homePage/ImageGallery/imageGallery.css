@@ -9,8 +9,8 @@
 
 .white-text-block {
   min-width: 100vh;
-  height: 103.56vh;
-  top: -2.2rem;
+  height: 104vh;
+  top: -2.3rem;
   position: absolute;
   background: linear-gradient(
     to right,
@@ -20,7 +20,6 @@
     rgba(255, 255, 255, 0.5),
     rgba(255, 255, 255, 0)
   );
-  /* border: 1px solid black; */
   border-radius: 0px 4.5rem 4.5rem 0px;
   z-index: 99;
 }
@@ -82,16 +81,21 @@ img {
 
 #next {
   margin-left: 53%;
-  /* right: 44%; */
 }
 
 #prev {
   margin-left: 44%;
-  /* left: 45%; */
+}
+
+@media (max-width: 1500px) {
+  .white-text-block {
+    transition: all 1s ease-in-out;
+    opacity: 0;
+  }
 }
 
 /*Setting up media query for laptop screens*/
-@media (min-width: 1025) and (max-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1440px) {
   .white-text-block {
     position: absolute;
     height: 96.5vh;

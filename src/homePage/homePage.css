@@ -9,17 +9,18 @@
   position: absolute;
   margin-top: 20px;
   margin-left: 5% !important;
-  font-size: 4.2rem;
   max-width: 80%;
   top: 32%;
   left: 30%;
   color: #553938;
   transform: translate(-50%, -50%);
+  padding-left: 2rem;
   z-index: 100;
 }
 
 /*different h3 tags for this container*/
 #one {
+  font-size: 4.2rem;
   top: 15%;
   left: 18%;
 }
