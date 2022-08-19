@@ -13,8 +13,5 @@
     "main.437feb0f.css.map": "/GregV-crypto/RealEstateRepo/tree/Splash-Page/static/css/main.437feb0f.css.map",
     "main.f2d49b7e.js.map": "/GregV-crypto/RealEstateRepo/tree/Splash-Page/static/js/main.f2d49b7e.js.map"
   },
-  "entrypoints": [
-    "static/css/main.437feb0f.css",
-    "static/js/main.f2d49b7e.js"
-  ]
+  "entrypoints": ["static/css/main.437feb0f.css", "static/js/main.f2d49b7e.js"]
 }

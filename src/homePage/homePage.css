@@ -4,22 +4,11 @@
   justify-content: center;
 }
 
-.homepage-container .tagLine {
-  margin: 50px;
-  font-style: italic;
-  font-size: 5.5rem;
-  max-width: 80%;
-  color: black;
-  position: absolute;
-  left: 8%;
-  top: 2rem;
-}
-
 .homepage-container h3 {
   font-family: Merriweather;
   position: absolute;
   margin-top: 20px;
-  margin-left: 4% !important;
+  margin-left: 5% !important;
   font-size: 4.2rem;
   max-width: 80%;
   top: 32%;
