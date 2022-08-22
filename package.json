@@ -19,10 +19,6 @@
     "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
-<<<<<<< HEAD
-=======
-  "homepage": ".",
->>>>>>> 3c8782fd60f935a8e6063136adf4a928a0b2e62b
   "scripts": {
     "pre-deploy": "npm run build",
     "deploy": "gh-pages -d build",

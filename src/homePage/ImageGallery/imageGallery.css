@@ -87,13 +87,6 @@ img {
   margin-left: 44%;
 }
 
-@media (max-width: 1500px) {
-  .white-text-block {
-    transition: all 1s ease-in-out;
-    opacity: 0;
-  }
-}
-
 /*Setting up media query for laptop screens*/
 @media (min-width: 1025px) and (max-width: 1440px) {
   .white-text-block {
