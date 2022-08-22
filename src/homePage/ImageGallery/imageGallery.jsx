@@ -5,13 +5,13 @@
  */
 
 /**Picture Imports */
-import ImageOne from "./Images/ImageOne.jpg";
 import ImageTwo from "./Images/ImageTwo.jpeg";
 import ImageThree from "./Images/ImageThree.jpeg";
 import ImageFour from "./Images/ImageFour.jpg";
 import ImageFive from "./Images/ImageFive.jpg";
 import ImageSix from "./Images/ImageSix.jpg";
 import ImageSeven from "./Images/ImageSeven.jpeg";
+import ImageEight from "./Images/ImageEight.jpeg";
 
 /**React Imports */
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
@@ -36,11 +36,6 @@ const pictureList = [
     Address: "101 Jackson Ave",
   },
   {
-    image: ImageOne,
-    heading: "Image #4",
-    Address: "2520 Watt Street",
-  },
-  {
     image: ImageFive,
     heading: "Image #5",
     Address: "108 Jackson Avenue",
@@ -55,6 +50,11 @@ const pictureList = [
     heading: "Image #7",
     Address: "2528 Watt Street",
   },
+  {
+    image: ImageEight,
+    heading: "Image #8",
+    Address: "2522 Watt Street",
+  },
 ];
 
 const ImageGallery = () => {
@@ -68,7 +68,7 @@ const ImageGallery = () => {
   //used for auto scroll feature
   const scroll = true;
   let picInterval;
-  let interval = 4000;
+  let interval = 6000;
 
   function auto() {
     picInterval = setInterval(NextImg, interval);

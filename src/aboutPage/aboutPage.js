@@ -12,7 +12,7 @@ const AboutPage = () => {
   const h1Ref = useRef();
   //state is used to store the value of the observer
   const [h1Visible, set_h1Visible] = useState();
-  console.log(h1Visible);
+  // console.log(h1Visible);
   useEffect(() => {
     //intersection observer needs a callback function to fire once an intersection is found
     const scrollObserver = new IntersectionObserver((entries) => {

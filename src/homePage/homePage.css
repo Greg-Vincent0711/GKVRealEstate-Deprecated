@@ -4,33 +4,23 @@
   justify-content: center;
 }
 
-.homepage-container .tagLine {
-  margin: 50px;
-  font-style: italic;
-  font-size: 5.5rem;
-  max-width: 80%;
-  color: black;
-  position: absolute;
-  left: 8%;
-  top: 2rem;
-}
-
 .homepage-container h3 {
   font-family: Merriweather;
   position: absolute;
   margin-top: 20px;
-  margin-left: 4% !important;
-  font-size: 4.2rem;
+  margin-left: 5% !important;
   max-width: 80%;
   top: 32%;
   left: 30%;
   color: #553938;
   transform: translate(-50%, -50%);
+  padding-left: 2rem;
   z-index: 100;
 }
 
 /*different h3 tags for this container*/
 #one {
+  font-size: 4.2rem;
   top: 15%;
   left: 18%;
 }
