@@ -19,7 +19,6 @@
     "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "{https://splash-page.d1id0eka4j16mc.amplifyapp.com}/#/",
   "scripts": {
     "pre-deploy": "npm run build",
     "deploy": "gh-pages -d build",
@@ -58,6 +57,7 @@
   "bugs": {
     "url": "https://github.com/GregV-crypto/RealEstateRepo/issues"
   },
+  "homepage": ".",
   "devDependencies": {
     "nodemon": "^2.0.19"
   }
