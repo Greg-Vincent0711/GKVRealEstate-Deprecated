@@ -25,7 +25,7 @@ import ImageTen from "./listingImages/ListingOne/ListingOneImageTen.png";
 
 import { AiFillRightCircle, AiFillLeftCircle } from "react-icons/ai";
 import React, { useState, useEffect } from "react";
-import "./listing.css"
+import "./listing.css";
 
 const ListingPictures = [
   {
@@ -93,7 +93,6 @@ const ListingPictures = [
   },
 ];
 
-
 const Listing = () => {
   const [currentImg, setImg] = useState(0);
   const listingLength = ListingPictures.length - 1;
@@ -124,21 +123,28 @@ const Listing = () => {
           >
             {index === currentImg && (
               <div className="listing-info">
-              <AiFillLeftCircle
-                className="arrow"
-                id="left"
-                onClick={NextImg}
-              />
-              <AiFillRightCircle
-              className="arrow" id="right"
-              onClick={PrevImg}
-            />
+                <AiFillLeftCircle
+                  className="arrow"
+                  id="left"
+                  onClick={NextImg}
+                />
+                <AiFillRightCircle
+                  className="arrow"
+                  id="right"
+                  onClick={PrevImg}
+                />
                 <img src={listing.image} id="image" alt="alt" />
-                  <ul>
-                    <li><h2 id="liOne">{listing.Building}</h2></li>
-                    <li><h2 id="liTwo">{listing.Cost}</h2></li>
-                    <li><h2 id="liThree">{listing.Message}</h2></li>
-                  </ul>
+                <ul>
+                  <li>
+                    <h2 id="liOne">{listing.Building}</h2>
+                  </li>
+                  <li>
+                    <h2 id="liTwo">{listing.Cost}</h2>
+                  </li>
+                  <li>
+                    <h2 id="liThree">{listing.Message}</h2>
+                  </li>
+                </ul>
               </div>
             )}
           </div>
@@ -151,6 +157,6 @@ const Listing = () => {
 export default Listing;
 
 /**l
- *  
- * TODO 
+ *
+ * TODO
  */

@@ -1,10 +1,11 @@
 {
-    "C_Cpp.errorSquiggles": "Disabled",
-    "files.associations": {
-        "iostream": "cpp",
-        "stdexcept": "cpp",
-        "string": "cpp",
-        "__locale": "cpp",
-        "locale": "cpp"
-    }
+  "C_Cpp.errorSquiggles": "Disabled",
+  "files.associations": {
+    "iostream": "cpp",
+    "stdexcept": "cpp",
+    "string": "cpp",
+    "__locale": "cpp",
+    "locale": "cpp"
+  },
+  "githubPullRequests.ignoredPullRequestBranches": ["main"]
 }
