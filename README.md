@@ -1,4 +1,3 @@
-RealEstateRepo
-All GKVRealEstate Code to be used between PC and Laptop
-Splash Page for the tenants to see before logging into the website. 
-Front end mini project branched off the main website.
+# GKVRealEstate
+A functioning prototype front-end splash page for tenants of GKVRealEstate. 
+My first endeavor in Web Development created in React JS and hosted with AWS Amplify.
