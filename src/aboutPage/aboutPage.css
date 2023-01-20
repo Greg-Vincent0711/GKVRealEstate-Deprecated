@@ -41,7 +41,7 @@ html {
 }
 
 /*Setting up dimensions for macbook*/
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1920px) {
   .main-container {
     line-height: 2.5rem;
   }
