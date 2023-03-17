@@ -71,23 +71,24 @@ const ImageGallery = () => {
   let interval = 6000;
 
   function auto() {
+    //timer that keeps track of when to call the nextImg fn to change the picture
     picInterval = setInterval(NextImg, interval);
   }
-
+ 
   useEffect(() => {
+    //automatically scroll to the next picture
     if (scroll) {
       auto();
     }
+    //after each new picture is shown, reset the timer.
     return () => clearInterval(picInterval);
   }, [currentImage]);
 
-  /**logic for handling the next image*/
+  /**logic for handling the next and prev images*/
   const NextImg = () => {
     //check list position before incrementing
     setCurrentImage(currentImage === picListLength ? 0 : currentImage + 1);
   };
-
-  /**logic for handling the previous image*/
   const PrevImg = () => {
     setCurrentImage(currentImage - 1 === -1 ? picListLength : currentImage - 1);
   };
