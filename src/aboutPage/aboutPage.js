@@ -20,7 +20,7 @@ const AboutPage = () => {
       const entry = entries[0];
       set_h1Visible(entry.isIntersecting);
     });
-    //h1Ref represents that fixed point
+    //h1Ref represents that fixed point.
     scrollObserver.observe(h1Ref.current);
   }, []);
   return (
