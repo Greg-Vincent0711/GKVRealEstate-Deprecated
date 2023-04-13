@@ -8,7 +8,12 @@ html {
   justify-content: center;
 }
 
-.homepage-container h3 {
+
+.responsive-one{
+  display:none;
+}
+
+.homepage-container h3{
   font-family: Merriweather;
   position: absolute;
   margin-top: 20px;
@@ -30,8 +35,8 @@ html {
 }
 
 #two {
-  font-size: 2.9rem;
-  top: 25%;
+  font-size: 3.3rem;
+  top: 22%;
   left: 18%;
 }
 
@@ -47,6 +52,12 @@ html {
     left: 22.5%;
   }
 }
+
+ @media only screen and (max-width: 390px) {
+  .homepage-container h3{
+    display: none;
+  }
+ }
 
 img {
   position: absolute;

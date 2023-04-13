@@ -8,21 +8,20 @@
   color: white;
 }
 
-/*submitBtn links the user to the website backend*/
 .submitBtn {
-  min-height: 90px;
-  width: 350px;
-  font-size: 40px;
+  /*controls button height*/
+  width: 22%;
+  font-size: 51px;
   font-family: Merriweather;
   background-color: #553938;
   color: white;
   box-sizing: border-box;
   border-radius: 2rem;
-  position: absolute;
-  top: 40%;
-  left: 21.57%;
-  transform: translate(-50%, -50%);
-  transition: 0.4s;
+  position: relative;
+  margin-top: 15%;
+  left: 13%;
+  /* transform: translate(-50%, -50%); */
+  /* transition: 0.4s; */
   z-index: 102;
 }
 
@@ -30,19 +29,14 @@
   background-color: #481f26;
 }
 
-/* .hvr-grow {
-  display: inline-block;
-  vertical-align: middle;
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  transition-duration: 0.3s;
-  transition-property: transform;
+/*iPhone 12 Pro*/
+@media only screen and (max-width: 390px) {
+  .submitBtn{
+    font-size: 1.7rem;
+    left: 26.2%;
+    white-space: nowrap;
+    width: 50%;
+    margin-top: 78vh;
+    border-radius: .1rem;
+  }
 }
-
-.hvr-grow:hover,
-.hvr-grow:focus,
-.hvr-grow:active {
-  transform: scale(1.1);
-} */

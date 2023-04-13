@@ -12,9 +12,20 @@ const AboutPage = () => {
   const h1Ref = useRef();
   //state is used to store the value of the observer
   const [h1Visible, set_h1Visible] = useState();
-  // console.log(h1Visible);
+  const observerOptions = {
+    root: null,
+    //when 2rem + the observe point is viewable, fire
+    rootMargin: "80%",
+    //10 percent of said area must be visible
+  }
   useEffect(() => {
-    //intersection observer needs a callback function to fire once an intersection is found
+    if(window.matchMedia("max-width: 390")){
+      const mobileObserver = new IntersectionObserver((entries) => {
+        const entry = entries[0];
+        set_h1Visible(entry.isIntersecting);
+      }, observerOptions)
+      mobileObserver.observe(h1Ref.current);
+    }
     const scrollObserver = new IntersectionObserver((entries) => {
       //observer only will work with one entry, a fixed point on the page
       const entry = entries[0];

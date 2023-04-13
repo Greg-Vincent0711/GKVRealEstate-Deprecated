@@ -75,14 +75,14 @@ const ImageGallery = () => {
     picInterval = setInterval(NextImg, interval);
   }
  
-  useEffect(() => {
-    //automatically scroll to the next picture
-    if (scroll) {
-      auto();
-    }
-    //after each new picture is shown, reset the timer.
-    return () => clearInterval(picInterval);
-  }, [currentImage]);
+  // useEffect(() => {
+  //   //automatically scroll to the next picture
+  //   if (scroll) {
+  //     auto();
+  //   }
+  //   //after each new picture is shown, reset the timer.
+  //   return () => clearInterval(picInterval);
+  // }, [currentImage]);
 
   /**logic for handling the next and prev images*/
   const NextImg = () => {
@@ -97,7 +97,7 @@ const ImageGallery = () => {
     <div className="img-main-container">
       <AiOutlineArrowLeft className="arrow" id="prev" onClick={PrevImg} />
       <AiOutlineArrowRight className="arrow" id="next" onClick={NextImg} />
-      <div className="white-text-block"></div>
+      <div className="white-block"></div>
       {pictureList.map((picture, index) => {
         return (
           <div

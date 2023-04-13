@@ -2,36 +2,44 @@
 
 /*Controls positioning of all content*/
 .img-main-container {
-  display: inline-block;
+  display: block;
+  position: relative;
   justify-content: center;
   align-items: center;
+  /*Take up 100 of the view width*/
+  width: 100vw;
+  /*shifts image down by one*/
+  height: 1vh;
+  box-sizing: border-box;
 }
 
-.white-text-block {
+/*Main image settings*/
+img {
+  width: 100%;
+  display: block;
+  /*cover a little extra of the bottom screen*/
+  height: 104%;
+  box-sizing: border-box;
+}
+
+.white-block{
   min-width: 100vh;
   height: 104vh;
   top: -2.3rem;
   position: absolute;
   background: linear-gradient(
     to right,
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0.9),
-    rgba(255, 255, 255, 0.68),
-    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, .9),
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.4),
     rgba(255, 255, 255, 0)
   );
   border-radius: 0px 4.5rem 4.5rem 0px;
   z-index: 99;
 }
 
-/*Main image settings*/
-img {
-  top: 1.5px;
-  width: 100%;
-  max-height: 102vh;
-  position: absolute;
-  box-sizing: border-box;
-}
+
 
 /*sets what is relevant to the view from img*/
 .current {
@@ -61,16 +69,17 @@ img {
 }
 
 .arrow {
-  top: 70%;
+  margin-top: 65vh;
   border: 2px solid #fff;
   border-radius: 50%;
   background-color: #553938;
   color: #fff;
-  width: 2.85rem;
-  height: 2.85rem;
+  width: 3.5rem;
+  height: 3.5rem;
   cursor: pointer;
   z-index: 200;
-  transition: 0.4s;
+
+  /* transition: 0.4s; */
   display: inline-block;
   position: absolute;
 }
@@ -79,46 +88,62 @@ img {
   background-color: maroon;
 }
 
-#next {
+#next{
   margin-left: 53%;
 }
 
-#prev {
+#prev{
   margin-left: 44%;
 }
 
-/*Setting up media query for laptop screens*/
-@media (min-width: 1025px) and (max-width: 1440px) {
-  .white-text-block {
-    position: absolute;
-    height: 103.1vh;
-    top: -1.2rem;
-    bottom: 1.5rem;
-    background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.5),
-    rgba(255, 255, 255, 0.3),
-    rgba(255, 255, 255, 0)
-  );
-  }
-
-  .arrow{
-    top:65%;
-  }
-
+/*iPhone 12 Pro media query*/
+@media only screen and (max-width: 390px) {
   .picture-info{
-    color:#FAF0E6;
+    font-size: 1.4rem;
+    white-space: nowrap;
+    top: 75%;
+    left: 2.5%;
   }
-}
+  
+  .arrow{
+    margin-top: 34rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    
+  }
+  #next{
+    margin-left: 67%;
+  }
+  
+  #prev{
+    margin-left: 23%;
+  }
 
-.arrow {
-  /* If you want to implement it in very old browser-versions */
-  -webkit-user-select: none; /* Chrome/Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+ */
-  user-select: none;
+  .white-block{
+    display: none;
+  }
+
+  /*Controls positioning of all content*/
+  .img-main-container {
+    display: block;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    /*Take up 100 of the view width*/
+    width: 95vw;
+    /*shifts image down by one*/
+    /* height: 1vh */
+    box-sizing: border-box;
+  }
+
+  /*Main image settings*/
+  img {
+    width: 100%;
+    display: block;
+    /*cover a little extra of the bottom screen*/
+    height: 88%;
+    box-sizing: border-box;
+  }
 }
 
 .fade-in {
