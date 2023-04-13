@@ -97,7 +97,7 @@ img {
 }
 
 /*iPhone 12 Pro media query*/
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 428px) {
   .picture-info{
     font-size: 1.4rem;
     white-space: nowrap;
