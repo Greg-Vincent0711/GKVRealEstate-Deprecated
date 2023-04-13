@@ -75,14 +75,14 @@ const ImageGallery = () => {
     picInterval = setInterval(NextImg, interval);
   }
  
-  // useEffect(() => {
-  //   //automatically scroll to the next picture
-  //   if (scroll) {
-  //     auto();
-  //   }
-  //   //after each new picture is shown, reset the timer.
-  //   return () => clearInterval(picInterval);
-  // }, [currentImage]);
+  useEffect(() => {
+    //automatically scroll to the next picture
+    if (scroll) {
+      auto();
+    }
+    //after each new picture is shown, reset the timer.
+    return () => clearInterval(picInterval);
+  }, [currentImage]);
 
   /**logic for handling the next and prev images*/
   const NextImg = () => {
